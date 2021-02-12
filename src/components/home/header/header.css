@@ -1,0 +1,16 @@
+.keyboardicon {
+    margin-top: 15vh;
+    width: 15vw;
+    height: 14vh;
+    object-fit: contain;
+}
+
+.line {
+    background-color: #ff5155;
+    margin: 1.4vh 2vw 0 2vw;
+    width: 10vw;
+    border: solid 2px #ff5155;
+
+}
+
+  
