@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { HomeHeader } from './header/header';
 import { Dropdown } from "./dropdown/dropdown";
-import { DIFFICULTY_LEVEL, DIFFICULTY_LEVEL_STRINGS } from '../../common/commonService';
+import { DIFFICULTY_LEVEL, DIFFICULTY_LEVEL_STRINGS,ROUTES } from '../../common/commonService';
 import playIcon from '../../assets/icons/play.svg';
 import './home.css';
 
@@ -26,7 +26,7 @@ export const Home = ({ history }) => {
     if (currentPlayer) {
       localStorage.setItem("player", currentPlayer);
       localStorage.setItem("difficultyLevel", difficultyLevel);
-      history.push('/game-area');
+      history.push(ROUTES.MAINGAME);
     }
   };
 

@@ -5,6 +5,7 @@ import {
   DIFFICULTY_FACTOR
 } from '../../../common/commonService';
 import { Timer } from '../../CountDownTimer/Timer';
+import "./gamearea.css";
 
 export const GameArea = ({ history }) => {
   //stores user input
@@ -18,19 +19,19 @@ export const GameArea = ({ history }) => {
   //get random word from the dictionary
   const getDictinaryWord = () => {
     const newDictionaryWord = dictionary.filter((word) => {
-      if (difficultyFactor < DIFFICULTY_FACTOR[medium])
+      if (difficultyFactor < DIFFICULTY_FACTOR.medium)
         return word.length <= 4;
-      if (difficultyFactor < DIFFICULTY_FACTOR[hard])
+      if (difficultyFactor < DIFFICULTY_FACTOR.hard)
         return word.length <= 8 && word.length >= 5;
       return word.length > 8;
     });
     const randomWord = Math.floor(Math.random() * Math.floor(newDictionaryWord.length));
-    return newDictionary[randomWord].toUpperCase();
+    return newDictionaryWord[randomWord].toUpperCase();
   };
 
   useEffect(() => {
-    const player = getItemFromStorage("player");
-    const difficultyLevel = getItemFromStorage("difficultyLevel");
+    const player = localStorage.getItem("player");
+    const difficultyLevel = localStorage.getItem("difficultyLevel");
     setDifficultyFactor(DIFFICULTY_FACTOR[difficultyLevel]);
     // eslint-disable
   }, []);
@@ -49,21 +50,21 @@ export const GameArea = ({ history }) => {
       setDifficultyFactor(difficultyFactor + 0.01);
       setFetchWord(true);
       setUserInputLetter("");
-      setSeconds(0);
-      setMicroSeconds(0);
-      setTimer(0);
+      // setSeconds(0);
+      // setMicroSeconds(0);
+      // setTimer(0);
     }
     // eslint-disable-next-line
   }, [fetchWord, userInputLetter]);
 
   //display color based on input
   const color = (i, char) => {
-    if (currentLetter && currentLetter[i] === char.toLowerCase())
+    if (userInputLetter && userInputLetter[i] === char.toLowerCase())
       return COLORS.GREEN;
     else if (
-      currentLetter &&
-      currentLetter[i] !== char.toLowerCase() &&
-      currentLetter.length - 1 >= i
+      userInputLetter &&
+      userInputLetter[i] !== char.toLowerCase() &&
+      userInputLetter.length - 1 >= i
     )
       return COLORS.PURPLE;
     return COLORS.WHITE;
@@ -72,7 +73,7 @@ export const GameArea = ({ history }) => {
   // store user input word
   const handleInputWord = (e) => {
     const { value } = e.target;
-    setUserInputLetter(value.toUpperCase);
+    setUserInputLetter(value);
   };
 
   return (
@@ -89,7 +90,7 @@ export const GameArea = ({ history }) => {
         ref={(input) => input && input.focus()}
         type="text"
         className="user-input-word"
-        value={currentLetter}
+        value={userInputLetter}
         onChange={handleInputWord}
       />
     </div>

@@ -1,7 +1,7 @@
 const COLORS = {
   GREEN: '#54BA18',
   PURPLE: '#445298',
-  WHITE:'white'
+  WHITE: 'white'
 };
 
 const DIFFICULTY_LEVEL = [
@@ -22,9 +22,15 @@ const DIFFICULTY_FACTOR = {
   hard: 2,
 };
 
+const ROUTES = {
+  HOME: '/',
+  MAINGAME: '/mainGame',
+};
+
 export {
   COLORS,
   DIFFICULTY_LEVEL,
   DIFFICULTY_LEVEL_STRINGS,
-  DIFFICULTY_FACTOR
+  DIFFICULTY_FACTOR,
+  ROUTES
 };
