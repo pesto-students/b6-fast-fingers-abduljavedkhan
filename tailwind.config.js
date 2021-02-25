@@ -11,7 +11,8 @@ module.exports = {
       'primary': '#ff5155',
       'secoundry':'#fff',
       'correct':"#54ba18",
-      'incorrect':"#445298"
+      'incorrect':"#445298",
+      'b-option':'#97a5a7'
     },
     border: {
       'radius': '50%',

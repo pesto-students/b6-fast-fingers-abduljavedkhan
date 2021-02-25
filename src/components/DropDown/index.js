@@ -11,7 +11,7 @@ const DropDown = ({ options, setOption, placeholder }) => {
         className="input-field-difficulty"
         onClick={() => setDropdownVisibility(!dropdownVisibility)}
       >
-        <div className="title">
+        <div className="text-b-option text-lg">
           {selected
             ? selected.toUpperCase()
             : placeholder}
@@ -24,7 +24,7 @@ const DropDown = ({ options, setOption, placeholder }) => {
         />
       </div>
       {dropdownVisibility && (
-        <div className="dropdown-box">
+        <div className="flex justify-center">
           <div className="dropdown" >
             {options.map((difficulty) => (
               <li key={difficulty.label} onClick={() => { setSelected(difficulty.label); setOption(difficulty.value); setDropdownVisibility(false) }}>

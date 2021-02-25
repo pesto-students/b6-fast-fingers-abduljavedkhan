@@ -16,7 +16,7 @@ const onWordMatch = (word) => {
 };
     const {word, text, setText} = useWord(difficulty,onWordMatch);
     useEffect(()=>{
-    if(!!text && !gameTimer.start){
+    if(!gameTimer.start){
         dispatch({type:'start', payload: timeForWord(difficulty, word.length)});
         }
     },[text, word, gameTimer.start, difficulty]);

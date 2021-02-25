@@ -14,15 +14,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.input-field-difficulty .title {
-  padding-top: 1vh;
-  font-size: 1.3vw;
-  color: #97a5a7;
-}
-.dropdown-box {
-  display: flex;
-  justify-content: center;
-}
+
 .dropdown {
   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
   width: 22vw;
