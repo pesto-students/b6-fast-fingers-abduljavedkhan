@@ -10,7 +10,7 @@ const  GameHeader = ({playerName, difficulty, score}) => {
     return (
         <div className="flex flex-row justify-between">
         <div className="flex flex-col justify-start items-center text-left text-primary uppercase">
-        <div className="flex flex-row justify-start mx-3 my-3 pr-3">
+        <div className="flex flex-row justify-start mx-2 my-1 pr-3">
                 <img src={accountIcon} alt="icon" width="25vw" className="mr-4" />
                 <h3>
                     {`PLAYER_${playerName}`}
@@ -23,7 +23,7 @@ const  GameHeader = ({playerName, difficulty, score}) => {
                 </h3>
             </div>
         </div>
-        <div className="flex flex-col text-right text-lg text-primary mr-5">
+        <div className="flex flex-col text-right text-lg text-primary pr-5 mr-5">
                 <h3 className="text-xl mb-2">
                     {`fast fingers`}
                 </h3>

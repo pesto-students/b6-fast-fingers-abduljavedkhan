@@ -3,7 +3,7 @@ import { timeFormat } from '../../common-service';
 
 const  GameOver = ({ score, gameScores, isHighScore }) => {
 
-    return (<div className="text-center justify-center text-5xl self-center mb-10 mt-16">
+    return (<div className="text-center justify-center text-3xl self-center mb-10 mt-16">
         <div>
         SCORE : GAME {gameScores.length}
         </div>

@@ -33,9 +33,9 @@ const MainGame = () => {
         setGameOverStatus(false);
     }
     return (
-        <div className="flex-1 p-2.5 flex-col text-center justify-between text-secoundry">
+        <div className="flex-1 p-2.5 flex-col text-center items-center w-screen h-screen justify-between text-secoundry">
             <GameHeader difficulty={currentDifficulty} playerName={player} score={score} />
-            <div className="flex flex-row flex-wrap-reverse justify-center mt-8 ">
+            <div className="flex flex-row flex-wrap-reverse justify-center">
                 {!gameOverStatus ?
                     <>
                         <ScoreBoard scores={scores.current} />
@@ -59,7 +59,7 @@ const MainGame = () => {
                 }
             </div>
 
-            <div className="w-max">
+            <div className="w-max mb-5 mt-3 ml-2 ">
                 {!gameOverStatus ?
                     <Button icon={crossIcon} text="STOP GAME" onClick={handleGameOver} /> :
                     <Link to={ROUTES.HOME}>

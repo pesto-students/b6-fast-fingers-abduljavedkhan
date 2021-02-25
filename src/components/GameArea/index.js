@@ -16,13 +16,13 @@ const onWordMatch = (word) => {
 };
     const {word, text, setText} = useWord(difficulty,onWordMatch);
     useEffect(()=>{
-    if(!gameTimer.start){
+    if(!!text && !gameTimer.start){
         dispatch({type:'start', payload: timeForWord(difficulty, word.length)});
         }
     },[text, word, gameTimer.start, difficulty]);
     
     return (
-        <div className="flex flex-col items-center ml-36">
+        <div className="flex flex-col items-center ml-12">
             <Timer
                 onFinish={handleGameOver}
                 timerControl={gameTimer}
