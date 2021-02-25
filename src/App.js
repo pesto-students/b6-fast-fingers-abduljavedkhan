@@ -1,18 +1,17 @@
 import React from 'react';
-import './App.css';
-import { BrowserRouter,Switch, Route } from "react-router-dom";
-import { Home } from './components/home/home';
-import { Game } from './components/game/mainGame';
-import { ROUTES } from './common/commonService';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { ROUTES } from './common-service';
+import  Home  from './pages/Home';
+import MainGame  from './pages/MainGame';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-bgimage flex flex-col min-w-screen min-h-screen ">
       <BrowserRouter>
-      <Switch>
-        <Route exact path={ROUTES.HOME} component={Home} />
-        <Route exact path={ROUTES.MAINGAME} component={Game} />
-      </Switch>
+        <Switch>
+          <Route exact path={ROUTES.HOME} component={Home} />
+          <Route path={`${ROUTES.MAINGAME}/:player/:difficultyLevel`} component={MainGame} />
+        </Switch>
       </BrowserRouter>
     </div>
   );
