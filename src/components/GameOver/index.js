@@ -5,7 +5,7 @@ const  GameOver = ({ score, gameScores, isHighScore }) => {
 
     return (<div className="text-center justify-center text-3xl self-center mb-10 mt-16">
         <div>
-        SCORE : GAME {gameScores.length}
+        SCORE : GAME {score !== 0 ? gameScores.length: gameScores.length + 1 }
         </div>
         <div className="mb-8 mt-8">
             {timeFormat(score)}

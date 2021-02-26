@@ -6,7 +6,7 @@ import MainGame  from './pages/MainGame';
 
 function App() {
   return (
-    <div className="bg-bgimage flex flex-col min-w-screen min-h-screen ">
+    <div className="bg-bgimage bg-no-repeat flex flex-col min-w-screen min-h-screen ">
       <BrowserRouter>
         <Switch>
           <Route exact path={ROUTES.HOME} component={Home} />

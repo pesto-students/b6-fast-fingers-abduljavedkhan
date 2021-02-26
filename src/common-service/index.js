@@ -38,15 +38,9 @@ const ROUTES = {
 
 const DIFFICULTY_FACTOR_INCREMENT = 0.01;
 
-const timeFormat = (time) => {
-  return `${Math.floor(time/6000)} : ${Math.floor(time%6000/100)} : ${time%100}`;
-}
+const timeFormat = (time) =>  `${Math.floor(time/60)} : ${Math.floor(time%600/10)}`;
 
-
-
-const timeForWord = (difficulty,wordLength) => {
-    return Math.ceil(wordLength / difficulty) > 2 ? Math.ceil(wordLength / difficulty) * 100 : 200;
-}
+const timeForWord = (difficulty,wordLength) => Math.ceil(wordLength / difficulty) > 2 ? Math.ceil(wordLength / difficulty) * 100 : 200;
 
 export {
   DIFFICULTY_LEVEL,

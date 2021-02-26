@@ -4,7 +4,7 @@ import TextInput from '../TextInput';
 import { DIFFICULTY_FACTOR_INCREMENT,timeForWord } from '../../common-service';
 import useWord from '../../GameHooks/useWord';
 import FetchWord from '../FetchWord';
-import {initialState, gameControl} from '../../GameHooks/useCommonState';
+import {initialState, gameControl} from '../commonState';
 
 const GameArea = ({ difficulty, setDifficulty, setScore, handleGameOver }) =>{
 

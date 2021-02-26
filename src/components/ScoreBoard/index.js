@@ -9,16 +9,18 @@ const ScoreBoard = ({ scores }) => {
             <div className="text-lg text-primary">
                 SCORE BOARD
         </div>
-            <div className="flex flex-col justify-between py-1 px-2 mx-3">
+            <div className="flex flex-col justify-between py-2 px-2 mx-4">
                 {scores.map((score, index) =>
-                    <div key={index} className="flex flex-row justify-around py-2 px-1">
-                    <span className="text-xs mr-2 text-primary">
-                        {   score === Math.max(...scores) ? " Best score" : " "}
+                    <div key={index} 
+                    className= { score === Math.max(...scores) ? "flex flex-row justify-even text-sm text-primary" : "flex flex-row justify-even py-0 px-1 ml-4 text-base"}    
+                    >
+                    <span>
+                        {   score === Math.max(...scores) ? "Best" : " "}
                     </span>
-                    <div  className="ml-2 pl-4" >
+                    <div  className="ml-5 mr-4  " >
                         GAME : {index + 1} 
                     </div>
-                    <div className="ml-3 pl-2">
+                    <div className="ml-6">
                     <div>
                         {timeFormat(score)}
                     </div>
