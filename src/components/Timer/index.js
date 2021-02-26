@@ -23,7 +23,7 @@ function Timer({timerControl, onFinish}) {
     }, [time, onFinish])
 
     return (
-        <TimerProgressBar progress={time*100/totalTime} size={240}>
+        <TimerProgressBar progress={time*100/totalTime} size={180}>
             <span className="text-2xl">{timeFormat(time)}</span>
         </TimerProgressBar>
     );

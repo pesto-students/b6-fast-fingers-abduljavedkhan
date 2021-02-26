@@ -2,6 +2,7 @@ import React from 'react'
 import { timeFormat } from '../../common-service';
 
 const ScoreBoard = ({ scores }) => {
+
     return (
         <>
         <div className=" border-red-700 min-h-md w-72 border-2 ml-2 rounded-lg border-solid mb-1 overflow-hidden mr-10">
@@ -12,7 +13,7 @@ const ScoreBoard = ({ scores }) => {
                 {scores.map((score, index) =>
                     <div key={index} className="flex flex-row justify-around py-2 px-1">
                     <span className="text-xs mr-2 text-primary">
-                        {score === Math.max(...scores) ? " Best score" : " "}
+                        {   score === Math.max(...scores) ? " Best score" : " "}
                     </span>
                     <div  className="ml-2 pl-4" >
                         GAME : {index + 1} 

@@ -7,7 +7,7 @@ const DropDown = ({ options, setOption, placeholder }) => {
   return (
     <div>
       <div
-        className="flex flex-row justify-between w-72 h-12 opacity-50 rounded-xl pl-3 pt-2 pr-4 border-2 border-solid shadow bg-transparent"
+        className="flex flex-row justify-between w-64 h-10 opacity-50 rounded-xl pl-3 pt-2 pr-4 border-2 border-solid shadow bg-transparent"
         onClick={() => setDropdownVisibility(!dropdownVisibility)}
       >
         <div className="text-b-option">
@@ -24,7 +24,7 @@ const DropDown = ({ options, setOption, placeholder }) => {
       </div>
       {dropdownVisibility && (
         <div className="flex justify-center">
-          <div className="shadow list-none rounded-tl-none rounded-br-xl rounded-bl-xl w-64 mt-0 opacity-50 pt-1 pb-1  text-incorrect bg-white  overflow-hidden " >
+          <div className="shadow list-none rounded-tl-none rounded-br-xl rounded-bl-xl w-60 mt-0 opacity-50 pt-1 pb-1  text-incorrect bg-white  overflow-hidden " >
             {options.map((difficulty) => (
               <li className=" hover:bg-gray-700 pl-2 text-b-option overflow-hidden" key={difficulty.label} onClick={() => { setSelected(difficulty.label); setOption(difficulty.value); setDropdownVisibility(false) }}>
                 {difficulty.label.toUpperCase()}

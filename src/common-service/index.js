@@ -42,6 +42,8 @@ const timeFormat = (time) => {
   return `${Math.floor(time/6000)} : ${Math.floor(time%6000/100)} : ${time%100}`;
 }
 
+
+
 const timeForWord = (difficulty,wordLength) => {
     return Math.ceil(wordLength / difficulty) > 2 ? Math.ceil(wordLength / difficulty) * 100 : 200;
 }
