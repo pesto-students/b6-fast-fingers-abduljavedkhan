@@ -5,7 +5,7 @@ const ScoreBoard = ({ scores }) => {
 
     return (
         <>
-        <div className=" border-red-700 min-h-md w-72 border-2 ml-2 rounded-lg border-solid mb-1 overflow-hidden mr-10">
+        <div className=" border-red-700 min-h-md w-72 border-2 ml-7 rounded-lg border-solid mb-1 overflow-hidden mr-10">
             <div className="text-lg text-primary">
                 SCORE BOARD
         </div>
