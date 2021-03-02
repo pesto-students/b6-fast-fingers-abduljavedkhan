@@ -1,3 +1,5 @@
+Demo : https://fast-finger-ajk.netlify.app
+
 # Fast Fingers
 
 Pesto Tech is proudly launching its own speed typing game named **Fast fingers**. You have been awarded with the project and you need to design and develop this project which should
