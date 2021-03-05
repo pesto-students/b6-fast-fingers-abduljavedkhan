@@ -1,5 +1,3 @@
-Demo : https://fast-finger-ajk.netlify.app
-
 # Fast Fingers
 
 Url : https://fast-finger-ajk.netlify.app
