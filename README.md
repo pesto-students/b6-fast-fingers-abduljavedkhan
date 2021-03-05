@@ -23,7 +23,7 @@ It has three difficulty levels.
 
 ## Learning Outcomes
 
-* UI design and smooth user experience\
+* UI design and smooth user experience
 * React concepts:\
 &nbsp; &nbsp; &nbsp; State management\
 &nbsp; &nbsp; &nbsp; Hook concept\
