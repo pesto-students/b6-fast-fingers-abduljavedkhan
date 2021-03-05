@@ -1,6 +1,7 @@
 # Fast Fingers
 
-Url : https://fast-finger-ajk.netlify.app\
+Url : https://fast-finger-ajk.netlify.app
+
 backend Repo : https://github.com/abduljavedkhan/fast-finger-backend
 
 ### About Game
