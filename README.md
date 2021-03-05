@@ -1,8 +1,35 @@
 # Fast Fingers
 
-Pesto Tech is proudly launching its own speed typing game named **Fast fingers**. You have been awarded with the project and you need to design and develop this project which should
-meet the requirements mentioned in the MVP below.
+Url : https://fast-finger-ajk.netlify.app
 
+### About Game
+A front-end project for improving user's typing skills.
+It has three difficulty levels.
+
+* Easy ( Words length of 0 - 4 )
+* Medium ( Words length of 5 - 8 )
+* Hard ( Words length > 8 )
+
+## Tech Stack
+
+* React
+* HTML5
+* TailwindCss
+
+## Setup
+
+``` npm install ``` \
+``` npm start ```
+
+## Learning Outcomes
+
+* UI design and smooth user experience\
+* React concepts:\
+&nbsp; &nbsp; &nbsp; State management\
+&nbsp; &nbsp; &nbsp; Hook concept\
+&nbsp; &nbsp; &nbsp; Custom Hook creation
+      
+      
 ## MVP Requirement
 
 1. Ask player to enter his/her name before starting the game.
