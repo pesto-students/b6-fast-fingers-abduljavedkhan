@@ -1,8 +1,10 @@
 # Fast Fingers
 
-Url : https://fast-finger-ajk.netlify.app
+Demo Url : https://fast-finger-ajk.netlify.app
 
 backend Repo : https://github.com/abduljavedkhan/fast-finger-backend
+
+backend Url : https://ff-backend-ajk.herokuapp.com
 
 ### About Game
 A front-end project for improving user's typing skills.
