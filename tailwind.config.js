@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
        'bgimage': "url('assets/icons/fast-fingers-bg.png')",
-      })
+      }),
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      }
     },
     textColor: {
       'primary': '#ff5155',

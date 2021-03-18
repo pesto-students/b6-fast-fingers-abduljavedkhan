@@ -9,6 +9,7 @@ import Button from '../../components/Button';
 
 import reloadIcon from '../../assets/icons/reload.svg';
 import crossIcon from '../../assets/icons/cross.svg';
+import logout from '../../assets/icons/logout.svg';
 import { ROUTES } from '../../common-service';
 import { addScoresToLocal, getScoresFromLocal } from '../../utils/storage';
 
@@ -62,9 +63,8 @@ const MainGame = () => {
             <div className="w-max mb-5 mt-3 ml-2 ">
                 {!gameOverStatus ?
                     <Button icon={crossIcon} text="STOP GAME" onClick={handleGameOver} /> :
-                    <Link to={ROUTES.HOME}>
-                        <Button icon={crossIcon} text="QUIT" />
-                    </Link>
+                    <Link to={ROUTES.LOGIN} className="mt-4 mb-4 ml-1 mr-8">
+                    <Button icon={logout} className="text-primary  pl-2 pr-4" text="LOG OUT" /> </Link>
                 }
             </div>
 

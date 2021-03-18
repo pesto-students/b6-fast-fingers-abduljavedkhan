@@ -28,7 +28,7 @@ const onWordMatch = (word) => {
                 timerControl={gameTimer}
             />
             <FetchWord dicFetchedWord={word} userInputLetter={text} />
-            <TextInput text={text} setText={setText} textAlign="center" />
+            <TextInput text={text} setText={setText} textAlign="center" upperCase={true} isAutoFocus={true} />
         </div>
     );
 }
