@@ -7,7 +7,7 @@ const DropDown = ({ options, setOption, placeholder }) => {
   return (
     <div>
       <div
-        className="flex flex-row justify-between w-64 h-10 opacity-50 rounded-xl pl-3 pt-2 pr-4 border-2 border-solid shadow bg-transparent"
+        className="flex flex-row justify-between w-64 h-10 opacity-50 rounded-xl pl-3 pt-2 pr-4 border-2 border-solid shadow bg-transparent mt-2 mb-2"
         onClick={() => setDropdownVisibility(!dropdownVisibility)}
       >
         <div className="text-b-option">

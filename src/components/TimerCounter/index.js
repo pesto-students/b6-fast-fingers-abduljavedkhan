@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import TimerProgressBar from '../TimerProgressBar';
+import ProgressTimer from '../ProgressTimer';
 import {timeFormat} from '../../common-service';
 import useTimer from '../../GameHooks/useTimer';
-function Timer({timerControl, onFinish}) {
+
+const TimerCounter = ({timerControl, onFinish}) =>{
     
     const {start, playAgain, totalTime} = timerControl;
     const {time, setStart, setPlayAgain} = useTimer(totalTime);
@@ -23,9 +24,9 @@ function Timer({timerControl, onFinish}) {
     }, [time, onFinish])
 
     return (
-        <TimerProgressBar progress={time*100/totalTime} size={170}>
+        <ProgressTimer progress={time*100/totalTime} size={170}>
             <span className="text-2xl">{timeFormat(time)}</span>
-        </TimerProgressBar>
+        </ProgressTimer>
     );
 }
-export default Timer
+export default TimerCounter
