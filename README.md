@@ -2,8 +2,6 @@
 
 Demo Url : https://fast-finger-ajk.netlify.app
 
-backend Repo : https://github.com/abduljavedkhan/fast-finger-backend
-
 backend Url : https://ff-backend-ajk.herokuapp.com
 
 ### About Game
