@@ -1,7 +1,7 @@
 import easyWord from '../data/easy.json';
 import mediumWord from '../data/medium.json';
 import hardWord from '../data/hard.json';
-const domain = "https://ff-backend-ajk.herokuapp.com";
+const domain = process.env.DOMAIN;
 const REGISTER_API_ENDPOINT = domain + "/api/fast-finger/user/signup";
 const LOGIN_API_ENDPOINT = domain + "/api/fast-finger/user/login";
 const ADD_SCORE_API = domain + "/api/fast-finger/game/score";

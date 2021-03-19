@@ -1,5 +1,5 @@
 import React, { useEffect, useReducer } from 'react';
-import Timer from '../../components/Timer'
+import TimerCounter from '../../components/TimerCounter'
 import TextInput from '../TextInput';
 import { DIFFICULTY_FACTOR_INCREMENT,timeForWord } from '../../common-service';
 import useWord from '../../GameHooks/useWord';
@@ -23,7 +23,7 @@ const onWordMatch = (word) => {
     
     return (
         <div className="flex flex-col items-center ml-12">
-            <Timer
+            <TimerCounter
                 onFinish={handleGameOver}
                 timerControl={gameTimer}
             />

@@ -29,7 +29,7 @@ const Signup = () => {
                 placeholder="TYPE YOUR USERNAME"
                 required={true}
                 isAutoFocus={false}
-                requiredMsg="username can't be blank!!"
+                requiredMsg="Username can't be blank!!"
                 check={check}
             />
             <TextInput
@@ -38,7 +38,7 @@ const Signup = () => {
                 placeholder="TYPE YOUR EMAIL"
                 required={true}
                 isAutoFocus={false}
-                requiredMsg="email can't be blank!!"
+                requiredMsg="Email can't be blank!!"
                 check={check}
             />
             <TextInput
@@ -47,7 +47,7 @@ const Signup = () => {
                 placeholder="TYPE YOUR PASSWORD"
                 required={true}
                 isAutoFocus={false}
-                requiredMsg="password can't be blank!!"
+                requiredMsg="Password can't be blank!!"
                 check={check}
             />
             {!signupcheck ?  <div className="flex flex-row justify-around">

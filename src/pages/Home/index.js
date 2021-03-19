@@ -27,7 +27,8 @@ const Home = props => {
                 <Button icon={playIcon} text="START GAME" />
             </Link>
             <Link to={ROUTES.LOGIN} className="mt-4 mb-4 ml-1 mr-8">
-        <Button icon={logout} className="text-primary  pl-2 pr-4" text="LOG OUT" /> </Link>
+        <Button icon={logout} className="text-primary  pl-2 pr-4" text="LOG OUT" />
+         </Link>
         </div>
     );
 }
