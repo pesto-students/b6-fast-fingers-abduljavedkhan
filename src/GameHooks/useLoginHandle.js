@@ -2,11 +2,11 @@ import { useState, useCallback } from "react";
 import {  LOGIN_API_ENDPOINT } from '../common-service';
 //import usePlayer from '../GameHooks/usePlayer';
 
-const useLoginHandle = (val) => {
-
+const useLoginHandle = () => {
+// removed val from email password
     const [ player, setPlayer ] = useState('');
-    const [email, setEmail] = useState(val);
-    const [password, setPassword] = useState(val);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const [check,setCheckState] = useState(false);
     const [logincheck,setLoginCheck] = useState(false);
     const [errorMsg,setErrorMsg] = useState('');

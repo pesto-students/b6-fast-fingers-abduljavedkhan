@@ -14,13 +14,14 @@ import { ROUTES } from '../../common-service';
 import { addScoresToLocal, getScoresFromLocal } from '../../utils/storage';
 
 const MainGame = () => {
+    // keep all this on useReducer (for multiple state management)
     const { player, difficultyLevel } = useParams();
     const [currentDifficulty, setCurrentDifficulty] = useState(Number(difficultyLevel));
     const [gameOverStatus, setGameOverStatus] = useState(false);
     const [score, setScore] = useState(0);
 
     let scores = useRef(getScoresFromLocal());
-
+// add api call to update score , use REACT query or SWR
     const handleGameOver = () => {
         if (score !== 0)
         addScoresToLocal(score);

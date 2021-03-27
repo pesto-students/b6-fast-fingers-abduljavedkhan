@@ -8,7 +8,7 @@ import logout from '../../assets/icons/logout.svg';
 import { ROUTES, DIFFICULTY_LEVEL } from '../../common-service';
 
 const Home = props => {
-    const [difficultyLevel, setDifficultyLevel] = useState(1);
+    const [difficultyLevel, setDifficultyLevel] = useState(DIFFICULTY_LEVEL[0].value); // assigning initial difficulty level to 1 i.e. EASY
     const player = props.location.player;
     
     return (
@@ -21,9 +21,7 @@ const Home = props => {
                 placeholder="DIFFICULTY LEVEL"
             />
             <Link
-                to= { player !== '' ? `${ROUTES.MAINGAME}/${player}/${difficultyLevel}` : "#" }
-                onClick={() => !player }
-            >
+                to= { player !== '' ? `${ROUTES.MAINGAME}/${player}/${difficultyLevel}` : "#" }   >
                 <Button icon={playIcon} text="START GAME" />
             </Link>
             <Link to={ROUTES.LOGIN} className="mt-4 mb-4 ml-1 mr-8">

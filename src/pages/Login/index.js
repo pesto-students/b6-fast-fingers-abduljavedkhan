@@ -12,7 +12,7 @@ const Login = () => {
     let history = useHistory();
 
     if (loginSuccess) {
-        history.push({ pathname: ROUTES.HOME, player: player });
+        history.push({ pathname: ROUTES.HOME, player });
     }
     const signUp = () => {
         history.push(ROUTES.SIGNUP);
